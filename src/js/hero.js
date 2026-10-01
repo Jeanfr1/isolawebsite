@@ -38,7 +38,7 @@ const SLOTS = [
   { x: 0.88, y: 0.53, s: 0.09, r: -24, z: 'front', m: true },
   { x: 0.33, y: 0.68, s: 0.085, r: 32, z: 'front', m: true },
   { x: 0.16, y: 0.19, s: 0.08, r: -14, z: 'front', m: false },
-  { x: 0.56, y: -0.03, s: 0.065, r: 40, z: 'back', m: false },
+  { x: 0.66, y: 0.02, s: 0.065, r: 40, z: 'back', m: false },
   { x: 0.07, y: 0.06, s: 0.058, r: -35, z: 'back', m: true },
   { x: 0.86, y: 0.8, s: 0.065, r: 12, z: 'back', m: false },
 ];
