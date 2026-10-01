@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="da" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>isola · Mosede Havn — is, sorbet og kaffe ved havnen</title>
+    <meta name="description" content="isola er et ishus i Mosede Havn. Find din favoritsmag blandt klassikere og sorbeter, og tag en lille pause ved havnen." />
+    <meta name="theme-color" content="#E8EED4" />
+    <!-- TODO(isola): set canonical + absolute og:url / og:image once the final domain is known -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="da_DK" />
+    <meta property="og:site_name" content="isola Mosede Havn" />
+    <meta property="og:title" content="isola · Mosede Havn" />
+    <meta property="og:description" content="En lille pause. En stor smag. Find din favoritsmag hos isola i Mosede Havn." />
+    <meta property="og:image" content="/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <script>
+      // Picks the hero mode before first paint so the page height (and any #anchor) is right from the start.
+      (function () {
+        var d = document.documentElement;
+        var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var wide = window.matchMedia('(min-width: 900px) and (min-height: 560px)').matches;
+        d.classList.remove('no-js');
+        d.classList.add('js', reduced ? 'hero-static' : wide ? 'hero-scroll' : 'hero-compact');
+        if (!reduced) d.classList.add('motion-ok');
+      })();
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#indhold">Spring til indhold</a>
+
+    <svg class="icon-sprite" aria-hidden="true" focusable="false">
+      <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" /></symbol>
+      <symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" /></symbol>
+      <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 4v15m-6-6 6 6 6-6" /></symbol>
+      <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 5-7 7 7 7" /></symbol>
+      <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7" /></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" /></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11Z" /><circle cx="12" cy="10" r="2.4" /></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" /><path d="M12 7.5V12l3 2" /></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2" /><path d="m4 7 8 6 8-6" /></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M7.5 3.5h-2a2 2 0 0 0-2 2.2 15.5 15.5 0 0 0 14.8 14.8 2 2 0 0 0 2.2-2v-2.1a1 1 0 0 0-.8-1l-3.4-.8a1 1 0 0 0-1 .3l-1.3 1.4a12 12 0 0 1-5.4-5.4l1.4-1.3a1 1 0 0 0 .3-1l-.8-3.4a1 1 0 0 0-1-.8Z" /></symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16" /></symbol>
+    </svg>
+
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="isola Mosede Havn – til toppen">
+          <img src="/src/assets/img/logo-isola.webp" alt="isola Mosede Havn" width="168" height="50" />
+        </a>
+        <nav class="main-nav" aria-label="Hovedmenu">
+          <ul>
+            <li><a href="#smage" data-nav="smage">Smage</a></li>
+            <li><a href="#om-isola" data-nav="om-isola">Om isola</a></li>
+            <li><a href="#find-os" data-nav="find-os">Find os</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn--dark btn--sm" href="#find-os">
+            Besøg os <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right" /></svg>
+          </a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobilmenu" data-menu-toggle>
+            <svg class="icon" aria-hidden="true"><use href="#i-menu" /></svg>
+            <span class="sr-only">Menu</span>
+          </button>
+        </div>
+      </div>
+      <nav class="mobile-menu" id="mobilmenu" aria-label="Menu" hidden data-menu>
+        <ul class="container">
+          <li><a href="#smage">Smage</a></li>
+          <li><a href="#om-isola">Om isola</a></li>
+          <li><a href="#find-os">Find os</a></li>
+          <li><a href="#godt-at-vide">Godt at vide</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="indhold" tabindex="-1">
+      <!-- 01 · Hero. The track gives the sticky scene ~200vh of scroll on desktop (see src/js/hero.js). -->
+      <div class="hero-track" id="top" tabindex="-1" data-hero-track>
+        <section class="hero" aria-labelledby="hero-title" data-hero>
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow">isola · Mosede Havn</p>
+              <h1 class="hero-title" id="hero-title">
+                <span>En lille</span> <span>pause.</span> <span>En stor smag.</span>
+              </h1>
+              <p class="hero-lede">Find din favoritsmag hos isola.</p>
+              <div class="hero-actions">
+                <a class="btn btn--dark" href="#smage">
+                  Se smagene <svg class="icon" aria-hidden="true"><use href="#i-arrow-right" /></svg>
+                </a>
+                <a class="link-cta" href="#find-os">
+                  Besøg os <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right" /></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="stage" role="img" aria-label="Pistacie: en kugle is over en vaffel" data-stage>
+              <img
+                class="stage-poster"
+                src="/src/assets/img/hero-static-900.webp"
+                srcset="/src/assets/img/hero-static-560.webp 560w, /src/assets/img/hero-static-900.webp 900w"
+                sizes="(min-width: 900px) 40vw, 80vw"
+                alt=""
+                width="900"
+                height="1101"
+                loading="lazy"
+              />
+              <div class="scene" aria-hidden="true" data-scene>
+                <div class="particles particles--back" data-particles="back"></div>
+                <div class="cone" data-cone>
+                  <img
+                    src="/src/assets/img/cone-560.webp"
+                    srcset="/src/assets/img/cone-320.webp 320w, /src/assets/img/cone-560.webp 560w"
+                    sizes="(min-width: 900px) 17vw, 30vw"
+                    alt=""
+                    width="560"
+                    height="1041"
+                    data-cone-img
+                  />
+                </div>
+                <div class="scoops" data-scoops>
+                  <img
+                    class="scoop"
+                    src="/src/assets/img/scoop-pistacie-900.webp"
+                    srcset="/src/assets/img/scoop-pistacie-480.webp 480w, /src/assets/img/scoop-pistacie-900.webp 900w"
+                    sizes="(min-width: 900px) 28vw, 50vw"
+                    alt=""
+                    width="900"
+                    height="896"
+                    fetchpriority="high"
+                    data-scoop="0"
+                  />
+                </div>
+                <div class="particles particles--front" data-particles="front"></div>
+              </div>
+            </div>
+
+            <div class="flavor-picker" role="group" aria-label="Vælg smag" data-picker>
+              <button type="button" class="pick" aria-pressed="true" data-pick="0">Pistacie</button>
+              <button type="button" class="pick" aria-pressed="false" data-pick="1">Saltkaramel</button>
+              <button type="button" class="pick" aria-pressed="false" data-pick="2">Mango-sorbet</button>
+              <button type="button" class="pick" aria-pressed="false" data-pick="3">Hindbær-sorbet</button>
+              <a class="pick-skip" href="#smage" aria-label="Gå til alle smage">
+                <svg class="icon" aria-hidden="true"><use href="#i-arrow-down" /></svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="flavor-indicator" aria-hidden="true" data-indicator>
+            <p class="ind-count"><span data-ind-num>01</span> / 04</p>
+            <p class="ind-name" data-ind-name>Pistacie</p>
+            <span class="ind-rule"></span>
+            <ol class="ind-dots">
+              <li class="is-active"></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+          </div>
+
+          <svg class="hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <path d="M0 34C260 8 560 6 860 58c170 30 330 52 460 46 50-2 90-10 120-18V120H0Z" />
+          </svg>
+        </section>
+      </div>
+
+      <!-- 02 · Smage -->
+      <section class="catalog section" id="smage" tabindex="-1" aria-labelledby="smage-title" data-catalog>
+        <div class="container">
+          <div class="section-head" data-catalog-head>
+            <div>
+              <h2 class="section-title" id="smage-title">Hvilken smag er din?</h2>
+              <p class="section-lede">Klassikere, sorbeter og nye favoritter.</p>
+            </div>
+            <button class="link-cta" type="button" aria-expanded="false" aria-controls="alle-smage" data-all-toggle>
+              <span data-all-label>Se alle smage</span>
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow-right" /></svg>
+            </button>
+          </div>
+
+          <div class="featured">
+            <ul class="featured-list" data-featured-list>
+              <li>
+                <button class="flavor-card" type="button" aria-haspopup="dialog" aria-label="Pistacie – se smagen" data-card="0" style="--blob: #dbe5b8">
+                  <span class="card-media" data-card-media>
+                    <span class="card-blob"></span>
+                    <img src="/src/assets/img/scoop-pistacie-900.webp" srcset="/src/assets/img/scoop-pistacie-480.webp 480w, /src/assets/img/scoop-pistacie-900.webp 900w" sizes="(min-width: 900px) 260px, 62vw" alt="" width="900" height="896" loading="lazy" decoding="async" data-card-img />
+                  </span>
+                  <span class="card-meta"><span class="card-index">01</span><span class="card-name">Pistacie</span></span>
+                </button>
+              </li>
+              <li>
+                <button class="flavor-card" type="button" aria-haspopup="dialog" aria-label="Saltkaramel – se smagen" data-card="1" style="--blob: #f1d2ae">
+                  <span class="card-media" data-card-media>
+                    <span class="card-blob"></span>
+                    <img src="/src/assets/img/scoop-saltkaramel-900.webp" srcset="/src/assets/img/scoop-saltkaramel-480.webp 480w, /src/assets/img/scoop-saltkaramel-900.webp 900w" sizes="(min-width: 900px) 260px, 62vw" alt="" width="900" height="853" loading="lazy" decoding="async" data-card-img />
+                  </span>
+                  <span class="card-meta"><span class="card-index">02</span><span class="card-name">Saltkaramel</span></span>
+                </button>
+              </li>
+              <li>
+                <button class="flavor-card" type="button" aria-haspopup="dialog" aria-label="Mango-sorbet – se smagen" data-card="2" style="--blob: #ffe49b">
+                  <span class="card-media" data-card-media>
+                    <span class="card-blob"></span>
+                    <img src="/src/assets/img/scoop-mango-900.webp" srcset="/src/assets/img/scoop-mango-480.webp 480w, /src/assets/img/scoop-mango-900.webp 900w" sizes="(min-width: 900px) 260px, 62vw" alt="" width="900" height="888" loading="lazy" decoding="async" data-card-img />
+                  </span>
+                  <span class="card-meta"><span class="card-index">03</span><span class="card-name">Mango-sorbet</span></span>
+                </button>
+              </li>
+              <li>
+                <button class="flavor-card" type="button" aria-haspopup="dialog" aria-label="Hindbær-sorbet – se smagen" data-card="3" style="--blob: #f8c8d2">
+                  <span class="card-media" data-card-media>
+                    <span class="card-blob"></span>
+                    <img src="/src/assets/img/scoop-hindbaer-900.webp" srcset="/src/assets/img/scoop-hindbaer-480.webp 480w, /src/assets/img/scoop-hindbaer-900.webp 900w" sizes="(min-width: 900px) 260px, 62vw" alt="" width="900" height="891" loading="lazy" decoding="async" data-card-img />
+                  </span>
+                  <span class="card-meta"><span class="card-index">04</span><span class="card-name">Hindbær-sorbet</span></span>
+                </button>
+              </li>
+            </ul>
+            <div class="strip-nav" data-strip-nav>
+              <button class="round-btn" type="button" aria-label="Forrige smag" data-strip="-1">
+                <svg class="icon" aria-hidden="true"><use href="#i-chevron-left" /></svg>
+              </button>
+              <button class="round-btn" type="button" aria-label="Næste smag" data-strip="1">
+                <svg class="icon" aria-hidden="true"><use href="#i-chevron-right" /></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- "Se alle smage": in-page grid. List lives in src/data/flavors.js (TODO(isola): confirm names + spelling). -->
+          <div class="all-flavors" id="alle-smage" hidden data-all-panel>
+            <div class="all-head">
+              <div class="filters" role="group" aria-label="Filtrér smage">
+                <button type="button" class="chip" aria-pressed="true" data-filter="alle">Alle smage</button>
+                <button type="button" class="chip" aria-pressed="false" data-filter="klassiker">Klassikere</button>
+                <button type="button" class="chip" aria-pressed="false" data-filter="sorbet">Sorbeter</button>
+              </div>
+              <p class="all-count" aria-live="polite" data-all-count></p>
+            </div>
+            <ul class="all-list" data-all-list></ul>
+            <p class="all-note">Udvalget kan variere. Spørg i disken om dagens smage.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 · Om isola -->
+      <section class="about section" id="om-isola" tabindex="-1" aria-labelledby="om-title">
+        <div class="about-grid">
+          <div class="about-copy" data-reveal>
+            <h2 class="section-title title-tick" id="om-title">Din pause ved havnen.</h2>
+            <p>Tag en pause hos isola i Mosede Havn. Find din favoritsmag, nyd en kaffe og gør plads til et lille øjeblik ved havnen.</p>
+            <a class="link-cta" href="#find-os">
+              Besøg os <svg class="icon" aria-hidden="true"><use href="#i-arrow-right" /></svg>
+            </a>
+          </div>
+          <!-- TODO(isola): kit image 12 is a reconstruction of the supplied photo; swap for the original photo file before launch -->
+          <figure class="about-media" data-reveal="right">
+            <img
+              src="/src/assets/img/store-1600.webp"
+              srcset="/src/assets/img/store-640.webp 640w, /src/assets/img/store-1000.webp 1000w, /src/assets/img/store-1600.webp 1600w"
+              sizes="(min-width: 900px) 64vw, 100vw"
+              alt="Inde hos isola: isdisk i lyst træ, hvide fliser, espressomaskine og borde ved de store vinduer."
+              width="1600"
+              height="900"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- 04 · Det lille ekstra -->
+      <section class="extras section" id="det-lille-ekstra" aria-labelledby="ekstra-title">
+        <div class="container extras-grid">
+          <div class="extras-copy" data-reveal>
+            <h2 class="section-title" id="ekstra-title">Mere end en kugle.</h2>
+            <p class="section-lede">Kaffe, shakes og små pauser hos isola.</p>
+            <!-- TODO(isola): confirm the current drinks + short descriptions (no prices on the site until updated) -->
+            <ul class="drinks">
+              <li>
+                <a class="drink" href="#find-os">
+                  <span class="drink-text"><span class="drink-name">Milkshake</span><span class="drink-desc">Kold og cremet, rystet med is.</span></span>
+                  <svg class="icon" aria-hidden="true"><use href="#i-arrow-right" /></svg>
+                </a>
+              </li>
+              <li>
+                <a class="drink" href="#find-os">
+                  <span class="drink-text"><span class="drink-name">Espressoshake</span><span class="drink-desc">Milkshake med et skud espresso.</span></span>
+                  <svg class="icon" aria-hidden="true"><use href="#i-arrow-right" /></svg>
+                </a>
+              </li>
+              <li>
+                <a class="drink" href="#find-os">
+                  <span class="drink-text"><span class="drink-name">Iskaffe</span><span class="drink-desc">Kold kaffe – også med en kugle is.</span></span>
+                  <svg class="icon" aria-hidden="true"><use href="#i-arrow-right" /></svg>
+                </a>
+              </li>
+              <li>
+                <a class="drink" href="#find-os">
+                  <span class="drink-text"><span class="drink-name">Affogato</span><span class="drink-desc">Espresso hældt over en kugle is.</span></span>
+                  <svg class="icon" aria-hidden="true"><use href="#i-arrow-right" /></svg>
+                </a>
+              </li>
+            </ul>
+            <a class="btn btn--dark" href="#find-os">
+              Find os <svg class="icon" aria-hidden="true"><use href="#i-arrow-right" /></svg>
+            </a>
+          </div>
+          <!-- TODO(isola): concept render, not a real serving; replace with a photo of isola's affogato when available -->
+          <figure class="extras-media" data-reveal="right">
+            <img
+              src="/src/assets/img/affogato-1400.webp"
+              srcset="/src/assets/img/affogato-760.webp 760w, /src/assets/img/affogato-1400.webp 1400w"
+              sizes="(min-width: 900px) 56vw, 100vw"
+              alt="Affogato: espresso hældes over en kugle is i et lavt glas."
+              width="1400"
+              height="933"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <!-- 05 · Find os. Address, hours and contacts come from src/data/store.js -->
+      <section class="visit section" id="find-os" tabindex="-1" aria-labelledby="find-title">
+        <div class="container">
+          <div class="visit-card" data-reveal>
+            <div class="visit-copy">
+              <h2 class="section-title" id="find-title">Vi ses hos isola.</h2>
+              <p class="section-lede">Find os i Mosede Havn.</p>
+              <dl class="visit-facts">
+                <div class="fact">
+                  <dt><svg class="icon" aria-hidden="true"><use href="#i-pin" /></svg> Adresse</dt>
+                  <dd data-store-address>Mosede Havn</dd>
+                </div>
+                <div class="fact">
+                  <dt><svg class="icon" aria-hidden="true"><use href="#i-clock" /></svg> Åbningstider</dt>
+                  <dd data-store-hours>
+                    <a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=isola%20Mosede%20Havn" target="_blank" rel="noopener" data-store-route>Se dagens åbningstider på Google Maps<span class="sr-only"> (åbner i en ny fane)</span></a>
+                  </dd>
+                </div>
+              </dl>
+              <a class="btn btn--dark" href="https://www.google.com/maps/search/?api=1&amp;query=isola%20Mosede%20Havn" target="_blank" rel="noopener" data-store-route>
+                Find vej <svg class="icon" aria-hidden="true"><use href="#i-arrow-up-right" /></svg><span class="sr-only"> (åbner Google Maps i en ny fane)</span>
+              </a>
+            </div>
+            <figure class="visit-media">
+              <img
+                src="/src/assets/img/sign-800.webp"
+                srcset="/src/assets/img/sign-480.webp 480w, /src/assets/img/sign-800.webp 800w"
+                sizes="(min-width: 900px) 420px, 90vw"
+                alt="isolas runde skilt med teksten Mosede Havn på facaden, mod en blå himmel."
+                width="800"
+                height="811"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- 06 · Godt at vide. Only confirmed answers; TODO(isola) marks what the shop still has to confirm. -->
+      <section class="faq section" id="godt-at-vide" tabindex="-1" aria-labelledby="faq-title">
+        <div class="container faq-grid">
+          <div data-reveal>
+            <h2 class="section-title title-tick" id="faq-title">Godt at vide.</h2>
+          </div>
+          <div class="accordion" data-accordion>
+            <div class="acc-item">
+              <h3 class="acc-heading">
+                <button class="acc-trigger" type="button" id="faq-1" aria-expanded="false" aria-controls="faq-1-panel">
+                  Hvor finder jeg isola?<span class="acc-icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="acc-panel" id="faq-1-panel" role="region" aria-labelledby="faq-1">
+                <div class="acc-content">
+                  <!-- TODO(isola): exact address + how to get there (parking, path along the harbour) -->
+                  <p>Du finder os i Mosede Havn. Under <a class="text-link" href="#find-os">Find os</a> kan du åbne rutevejledningen direkte i Google Maps.</p>
+                </div>
+              </div>
+            </div>
+            <div class="acc-item">
+              <h3 class="acc-heading">
+                <button class="acc-trigger" type="button" id="faq-2" aria-expanded="false" aria-controls="faq-2-panel">
+                  Hvornår har I åbent?<span class="acc-icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="acc-panel" id="faq-2-panel" role="region" aria-labelledby="faq-2">
+                <div class="acc-content">
+                  <p>De aktuelle åbningstider står under <a class="text-link" href="#find-os">Find os</a> og opdateres, når de ændrer sig.</p>
+                </div>
+              </div>
+            </div>
+            <div class="acc-item">
+              <h3 class="acc-heading">
+                <button class="acc-trigger" type="button" id="faq-3" aria-expanded="false" aria-controls="faq-3-panel">
+                  Hvilke smage har I?<span class="acc-icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="acc-panel" id="faq-3-panel" role="region" aria-labelledby="faq-3">
+                <div class="acc-content">
+                  <p>Se udvalget under <a class="text-link" href="#smage">Smage</a> – både klassikere og sorbeter. Udvalget kan variere, så spørg i disken om dagens smage.</p>
+                </div>
+              </div>
+            </div>
+            <div class="acc-item">
+              <h3 class="acc-heading">
+                <button class="acc-trigger" type="button" id="faq-4" aria-expanded="false" aria-controls="faq-4-panel">
+                  Hvor finder jeg allergenoplysninger?<span class="acc-icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="acc-panel" id="faq-4-panel" role="region" aria-labelledby="faq-4">
+                <div class="acc-content">
+                  <!-- TODO(isola): approved allergen channel (list in the shop, link, email) -->
+                  <p>Spørg personalet i butikken, før du bestiller. Vi oplyser ikke allergener her på siden, så du altid får de aktuelle oplysninger.</p>
+                </div>
+              </div>
+            </div>
+            <div class="acc-item">
+              <h3 class="acc-heading">
+                <button class="acc-trigger" type="button" id="faq-5" aria-expanded="false" aria-controls="faq-5-panel">
+                  Kan jeg købe is med hjem?<span class="acc-icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="acc-panel" id="faq-5-panel" role="region" aria-labelledby="faq-5">
+                <div class="acc-content">
+                  <!-- TODO(isola): confirm the to-go offer (sizes, number of flavours) -->
+                  <p>Spørg efter en isboks to-go i butikken, så hjælper vi dig med smag og størrelse.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 07 · Footer -->
+    <footer class="site-footer" data-reveal="line">
+      <div class="container">
+        <div class="footer-top">
+          <span class="footer-rule" aria-hidden="true"></span>
+          <a class="footer-logo" href="#top" aria-label="isola Mosede Havn – til toppen">
+            <img src="/src/assets/img/logo-isola.webp" alt="isola Mosede Havn" width="168" height="50" loading="lazy" />
+          </a>
+        </div>
+        <div class="footer-grid">
+          <div class="footer-col">
+            <p class="footer-label">Besøg</p>
+            <p data-store-address>Mosede Havn</p>
+            <p data-store-hours-compact hidden></p>
+          </div>
+          <nav class="footer-col" aria-label="Sidefod">
+            <p class="footer-label">Siden</p>
+            <ul class="footer-links">
+              <li><a href="#smage">Smage</a></li>
+              <li><a href="#om-isola">Om isola</a></li>
+              <li><a href="#find-os">Find os</a></li>
+            </ul>
+          </nav>
+          <div class="footer-col" data-store-contact hidden>
+            <p class="footer-label">Kontakt</p>
+            <ul class="footer-links" data-store-contact-list></ul>
+          </div>
+        </div>
+        <p class="footer-legal">© <span data-year>2026</span> isola Mosede Havn</p>
+      </div>
+    </footer>
+
+    <!-- Flavor panel (catalog). Description only when approved by the shop. -->
+    <dialog class="flavor-dialog" aria-labelledby="dlg-title" data-dialog>
+      <div class="dlg-inner">
+        <button class="dlg-close round-btn" type="button" aria-label="Luk" data-dlg-close>
+          <svg class="icon" aria-hidden="true"><use href="#i-close" /></svg>
+        </button>
+        <div class="dlg-media" data-dlg-media>
+          <span class="card-blob"></span>
+          <img alt="" width="900" height="900" data-dlg-img />
+        </div>
+        <div class="dlg-body">
+          <p class="eyebrow" data-dlg-kicker>01 / 04 · Klassiker</p>
+          <h2 class="dlg-title" id="dlg-title" data-dlg-title>Pistacie</h2>
+          <p class="dlg-desc" data-dlg-desc></p>
+          <p class="dlg-note">Spørg i disken om dagens udvalg og allergenoplysninger.</p>
+          <div class="dlg-actions">
+            <a class="btn btn--dark" href="#find-os" data-dlg-visit>
+              Find os <svg class="icon" aria-hidden="true"><use href="#i-arrow-right" /></svg>
+            </a>
+            <div class="dlg-nav">
+              <button class="round-btn" type="button" aria-label="Forrige smag" data-dlg-step="-1">
+                <svg class="icon" aria-hidden="true"><use href="#i-chevron-left" /></svg>
+              </button>
+              <button class="round-btn" type="button" aria-label="Næste smag" data-dlg-step="1">
+                <svg class="icon" aria-hidden="true"><use href="#i-chevron-right" /></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>

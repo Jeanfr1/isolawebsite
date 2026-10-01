@@ -1,0 +1,375 @@
+{
+  "project": "Isola / Mosede Havn",
+  "version": "1.0",
+  "workflow": "Imagens geradas com ferramenta integrada imagegen; arquivo 14 copiado sem alteração.",
+  "scope": "PNG para animação em 2,5D. Sem modelos 3D ou sequência de frames.",
+  "assets": [
+    {
+      "file": "images/01-scoop-pistacie.png",
+      "role": "scoop",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1618471,
+      "sha256": "4bb5b07d2bd39e8c5e2c7b16d6255f1b8e5ffc8aacfe2cf68eec5e5fa15ceb63",
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visibleBoundsAlpha32": [
+        136,
+        138,
+        1134,
+        1130
+      ],
+      "paddingPixels": [
+        136,
+        138,
+        120,
+        124
+      ],
+      "heroBackground": "#E8EED4",
+      "layoutSeed": {
+        "transformOrigin": "top left",
+        "scaleRelativeToStage": 0.703647,
+        "translateXRelativeToStage": 0.143687,
+        "translateYRelativeToStage": -0.005752,
+        "note": "Palco quadrado. Imagem-base tem largura 100% do palco; valores iniciais, calibrar abertura do cone e limites no layout real."
+      },
+      "transparent": true
+    },
+    {
+      "file": "images/02-scoop-saltkaramel.png",
+      "role": "scoop",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1547439,
+      "sha256": "508a719eeb07fb69fd90d9c63444e0a3a9d50ad09252906b933a71b1d1adc19c",
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visibleBoundsAlpha32": [
+        128,
+        164,
+        1131,
+        1115
+      ],
+      "paddingPixels": [
+        128,
+        164,
+        123,
+        139
+      ],
+      "heroBackground": "#F3E1CA",
+      "layoutSeed": {
+        "transformOrigin": "top left",
+        "scaleRelativeToStage": 0.70014,
+        "translateXRelativeToStage": 0.148534,
+        "translateYRelativeToStage": -0.007049,
+        "note": "Palco quadrado. Imagem-base tem largura 100% do palco; valores iniciais, calibrar abertura do cone e limites no layout real."
+      },
+      "transparent": true
+    },
+    {
+      "file": "images/03-scoop-mango.png",
+      "role": "scoop",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1543980,
+      "sha256": "ec49552d385bf1500f305e53dd33f7f3aff80fafcf14a59ee78b4c2352e49750",
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visibleBoundsAlpha32": [
+        149,
+        156,
+        1118,
+        1114
+      ],
+      "paddingPixels": [
+        149,
+        156,
+        136,
+        140
+      ],
+      "heroBackground": "#FFF0BD",
+      "layoutSeed": {
+        "transformOrigin": "top left",
+        "scaleRelativeToStage": 0.724706,
+        "translateXRelativeToStage": 0.133891,
+        "translateYRelativeToStage": -0.016976,
+        "note": "Palco quadrado. Imagem-base tem largura 100% do palco; valores iniciais, calibrar abertura do cone e limites no layout real."
+      },
+      "transparent": true
+    },
+    {
+      "file": "images/04-scoop-hindbaer.png",
+      "role": "scoop",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1900103,
+      "sha256": "9078590b630b5d9c23920bc5fa9c96ef35cd9f7e28515dd2f34655b17b7abb4b",
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visibleBoundsAlpha32": [
+        123,
+        154,
+        1128,
+        1149
+      ],
+      "paddingPixels": [
+        123,
+        154,
+        126,
+        105
+      ],
+      "heroBackground": "#F9DDE2",
+      "layoutSeed": {
+        "transformOrigin": "top left",
+        "scaleRelativeToStage": 0.698746,
+        "translateXRelativeToStage": 0.151463,
+        "translateYRelativeToStage": -0.013025,
+        "note": "Palco quadrado. Imagem-base tem largura 100% do palco; valores iniciais, calibrar abertura do cone e limites no layout real."
+      },
+      "transparent": true
+    },
+    {
+      "file": "images/05-orbit-pistacie.png",
+      "role": "ingredient",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 850629,
+      "sha256": "385335f17c4b1c45ad9f57e735df603849a7a5887dc9b13ab51952c667fb6865",
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visibleBoundsAlpha32": [
+        311,
+        271,
+        987,
+        978
+      ],
+      "paddingPixels": [
+        311,
+        271,
+        267,
+        276
+      ],
+      "transparent": true
+    },
+    {
+      "file": "images/06-orbit-karamel.png",
+      "role": "ingredient",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 814210,
+      "sha256": "825dd7badbead7a517635e4bf250cbc7d6e9a984e88532517e814a9a5f9a9cc4",
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visibleBoundsAlpha32": [
+        269,
+        313,
+        992,
+        1019
+      ],
+      "paddingPixels": [
+        269,
+        313,
+        262,
+        235
+      ],
+      "transparent": true
+    },
+    {
+      "file": "images/07-orbit-mango.png",
+      "role": "ingredient",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 684070,
+      "sha256": "e38536f2af0a19afc0072a3a5441056ce217a20de4436153a3d0888292c2fc7b",
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visibleBoundsAlpha32": [
+        262,
+        221,
+        1069,
+        1014
+      ],
+      "paddingPixels": [
+        262,
+        221,
+        185,
+        240
+      ],
+      "transparent": true
+    },
+    {
+      "file": "images/08-orbit-hindbaer.png",
+      "role": "ingredient",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1342270,
+      "sha256": "2f43b1ebee1d871466735be5ca13f2b644f660d08b5d4c68ec7ea75eb0963c14",
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visibleBoundsAlpha32": [
+        209,
+        227,
+        1089,
+        1068
+      ],
+      "paddingPixels": [
+        209,
+        227,
+        165,
+        186
+      ],
+      "transparent": true
+    },
+    {
+      "file": "images/09-casquinha.png",
+      "role": "cone",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 903482,
+      "sha256": "85c01bcff6378cd1abb2c46c846960d513a02525e9f690215a35ff683add679e",
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visibleBoundsAlpha32": [
+        327,
+        103,
+        900,
+        1166
+      ],
+      "paddingPixels": [
+        327,
+        103,
+        354,
+        88
+      ],
+      "layoutSeed": {
+        "transformOrigin": "top left",
+        "scaleRelativeToStage": 0.744084,
+        "translateXRelativeToStage": 0.205969,
+        "translateYRelativeToStage": 0.393508,
+        "note": "Palco quadrado. Imagem-base tem largura 100% do palco; valores iniciais, calibrar abertura do cone e limites no layout real."
+      },
+      "transparent": true
+    },
+    {
+      "file": "images/10-logo-isola.png",
+      "role": "logo",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 847303,
+      "sha256": "e5dba1e25665253d5f0730e8fcc234d208a90ca849ca13537188867c31322e83",
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        254
+      ],
+      "visibleBoundsAlpha32": [
+        103,
+        314,
+        1455,
+        713
+      ],
+      "paddingPixels": [
+        103,
+        314,
+        81,
+        311
+      ],
+      "transparent": true
+    },
+    {
+      "file": "images/11-hero-pistacie.png",
+      "role": "Composição estática do hero",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1279891,
+      "sha256": "b7d98244e0a455108c19bacdb540b586e80ace833abda7aa83b0d038ac4db41f",
+      "mode": "RGBA",
+      "alphaExtrema": [
+        0,
+        255
+      ],
+      "visibleBoundsAlpha32": [
+        138,
+        28,
+        1131,
+        1243
+      ],
+      "paddingPixels": [
+        138,
+        28,
+        123,
+        11
+      ],
+      "transparent": true
+    },
+    {
+      "file": "images/12-loja-interior.png",
+      "role": "section-image",
+      "width": 1672,
+      "height": 941,
+      "bytes": 2151553,
+      "sha256": "6bad6317f54e720dca127a5405c964b00bb81385f83190229d2d83577494be81",
+      "mode": "RGB",
+      "transparent": false
+    },
+    {
+      "file": "images/13-affogato.png",
+      "role": "Editorial de produto ilustrativo",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 1823195,
+      "sha256": "1c64c4956c5fc6ad8f3af618a9f65c9ec3e2a36bcea79f7b4199e9d8771de1e8",
+      "mode": "RGB",
+      "transparent": false
+    },
+    {
+      "file": "images/14-placa-original.png",
+      "role": "Fotografia original da placa fornecida pelo usuário",
+      "width": 840,
+      "height": 852,
+      "bytes": 786585,
+      "sha256": "e376e6e3518eadcfd4bb4573dcda65e91743b61dc2ba48c7c10d6e97efc63145",
+      "mode": "RGBA",
+      "transparent": false
+    }
+  ],
+  "flavorOrder": [
+    "Pistacie",
+    "Saltkaramel",
+    "Mango-sorbet",
+    "Hindbær-sorbet"
+  ],
+  "flavorBackgrounds": [
+    "#E8EED4",
+    "#F3E1CA",
+    "#FFF0BD",
+    "#F9DDE2"
+  ]
+}

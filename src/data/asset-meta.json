@@ -1,0 +1,39 @@
+{
+  "scoop-pistacie": {
+    "ratio": 0.996
+  },
+  "scoop-saltkaramel": {
+    "ratio": 0.9473
+  },
+  "scoop-mango": {
+    "ratio": 0.9866
+  },
+  "scoop-hindbaer": {
+    "ratio": 0.9901
+  },
+  "ingredient-pistacie": {
+    "ratio": 1.0471
+  },
+  "ingredient-karamel": {
+    "ratio": 0.9739
+  },
+  "ingredient-mango": {
+    "ratio": 0.9815
+  },
+  "ingredient-hindbaer": {
+    "ratio": 0.9569
+  },
+  "cone": {
+    "ratio": 1.8591,
+    "rim": {
+      "x": 0.4783,
+      "y": 0.1151
+    }
+  },
+  "hero-static": {
+    "ratio": 1.2229
+  },
+  "logo": {
+    "ratio": 0.2964
+  }
+}
